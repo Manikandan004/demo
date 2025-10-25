@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    /* Sections */
+    section {
+      min-height: 100vh;
+      padding: 80px 20px 40px 20px; /* top padding for navbar space */
+    }
+
+    /* Home Section */
+    #home {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #home img {
+      max-width: 300px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #f4f4f4;
+    }
+
+    /* Skills Section */
+    #skills {
+      background-color: #e8f0fe;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skill-item {
+      background: #2575fc;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #f4f4f4;
+    }
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-item {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      flex: 1 1 200px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #e8f0fe;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #2575fc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #1a5dbf;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <img src="https://via.placeholder.com/300x200" alt="Profile Image">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I'm a Full Stack Developer learning HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about web development and enjoy creating interactive, responsive websites. I am constantly learning new technologies to improve my skills.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">React</div>
+      <div class="skill-item">Angular</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">Express</div>
+      <div class="skill-item">MongoDB</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase skills and projects using HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-item">
+        <h3>ToDo App</h3>
+        <p>A task management web app using JavaScript and localStorage.</p>
+      </div>
+      <div class="project-item">
+        <h3>Restaurant Website</h3>
+        <p>A CRUD application for managing restaurant menus with frontend and backend integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
